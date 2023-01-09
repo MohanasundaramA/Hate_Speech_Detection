@@ -1,7 +1,7 @@
 # **Hate Speech Detection**
 
 ## Abstract
-Social media sites such as Twitter and Facebook have connected billions of people and given the opportunity to the users to share their ideas and opinions instantly. That being said, there are several ill consequences as well such as online harassment, trolling, cyber-bullying, fake news, and hate speech. Out of these, hate speech presents a unique challenge as it is deep engraved into our society and is often linked with offline violence. Social media platforms rely on local moderators to identify hate speech and take necessary action, but with a prolific increase in such content over the social media many are turning toward automated hate speech detection and mitigation systems. This shift brings several challenges on the plate, and hence, is an important avenue to explore for the computation social science community. This project aims to detect hate speech and classify twitter texts using NLP techniques and Machine Learning.
+Hate speech is extremely common on platforms such as Twitter, Facebook, comments sections and even blogs or biased online publications, and even though things like profanity filters exist, they only filter out obscenities and swear words.We find that the vast majority of hate speech consists of veiled attacks, or otherwise uses words that would in other contexts be completely innocuous but are being used to attack an individual or group. Most of even this is contextualized, so to know the context of each of the sentences and then gauge the hatefulness to a near perfect accuracy would require some knowledge of the topic under discussion which is beyond the scope of our rule-based algorithm. However, we find we can achieve a healthy precision in not just the detection of hate speech, but also its segregation into weakly or strongly hateful speech.
 
 ## Requirements
 - Python - 3.6.7
@@ -13,12 +13,25 @@ Social media sites such as Twitter and Facebook have connected billions of peopl
 ## Dataset
 Dataset can be downloaded by clicking [here](https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset). It contains 7 columns namely count, hate_speech, offensive_language, neither, class, tweet
 
-Tweets are classified as: hate-speech, offensive language, and neither
+Tweets are classified as: hate-speech(1430), offensive language(19190), and neither(4163)
+
+## Flow of the project
+- Pre-processing the tweets (Remove: stop words, emojis, mentions, urls and all kind of noise, along with a stage of lemmatizing and stemming)
+- Use TF-IDF vectorizer to convert the data into a model of numerical features that are ready to be used for classification
+- Apply cross validation on the training vectors with 0.2 splitting factor, while tuning some of the selected parameters to enhance the accuracy
+- Use the best estimator of selected classifier to predict the test labels
 
 ## Classifiers
 - Logistic Regression
-  + Accuracy =  
+  + Accuracy = 89.75%
 - Random Forest Classifier
+  + Accuracy = 89.75%
 - Linear Support Vector Classifier
+  + Accuracy = 89.33%
 - AdaBoost Classifier
+  + Accuracy = 93.56%
 - XGBoost Classifier
+  + Accuracy = 89.79%
+
+## Results
+With the balanced dataset, at a baseline accuracy of 78%, the best models (Random Forest, Logistic Regression, and SVM) improved accuracy to around 92%. In terms of other metrics, they exhibited the highest F1 scores at around 87-88%, but do not have the highest recall or precision scores. They also have the highest ROC-AUC scores at around 96% and PR-AUC scores at around 95%.
