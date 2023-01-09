@@ -17,7 +17,7 @@ Tweets are classified as: hate-speech, offensive language, and neither
 
 ## Classifiers
 - Logistic Regression
-      - Accuracy =  
+  - Accuracy =  
 - Random Forest Classifier
 - Linear Support Vector Classifier
 - AdaBoost Classifier
