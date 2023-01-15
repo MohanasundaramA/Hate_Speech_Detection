@@ -41,7 +41,7 @@ The dataset can be downloaded by clicking here. The Davidson Dataset contains 24
 - XGBoost Classifier
   + Accuracy = 89.79%
   
-After tuning the best model (AdaBoost), model accuracy increases to 95.6%
+After tuning the best model (AdaBoost), model accuracy increases to 95.6%.
 
 ## Results
-With the balanced dataset, at a baseline accuracy of 78%, the best models (Random Forest, Logistic Regression, and SVM) improved accuracy to around 92%. In terms of other metrics, they exhibited the highest F1 scores at around 87-88%, but do not have the highest recall or precision scores. They also have the highest ROC-AUC scores at around 96% and PR-AUC scores at around 95%.  The model we have trained is a little over fitting the training data but we can handle this by using different regularization techniques. But still, we had achieved 90% accuracy on the validation data.  Different machine learning models have different strengths that make some better than others for certain tasks such as detecting hate speech. Some models are more accurate while others are more efficient. It is important to use different models and compare their performance in order to find the best one for hate speech detection.
+Different machine learning models have different strengths that make some better than others for certain tasks, such as detecting hate speech. Some models are more accurate, while others are more efficient. It is important to use different models and compare their performances in order to find the best one for hate speech detection.  The model we have trained is a little overfit to the training data, but we can handle this by using different regularisation techniques. But still, we had achieved 95% accuracy on the validation data.
