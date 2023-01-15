@@ -11,9 +11,7 @@ Hate speech is extremely common on platforms such as Twitter, Facebook, comments
 - Sklearn - 1.2.0
 
 ## Dataset
-Dataset can be downloaded by clicking [here](https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset). The Davidson Dataset contains 24,802 tweets with 5.77% labeled as hate, 77.43% as offensive, and 16.80% as Neutral using crowdsourcing for annotating the tweets into the 3 classes. It contains 7 columns namely count, hate_speech, offensive_language, neither, class and tweet
-
-Tweets are classified as: hate-speech(1430 rows), offensive language(19190 rows), and neither(4163 rows)
+Dataset can be downloaded by clicking [here](https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset). The Davidson Dataset contains 24,802 tweets with 5.77% or 1430 rows labeled as hate, 77.43% or 19190 rows as offensive, and 16.80% or 4163 rows as Neither using crowdsourcing for annotating the tweets into the 3 classes. It contains 7 columns namely count, hate_speech, offensive_language, neither, class and tweet
 
 ## Flow of the project
 - Pre-processing the tweets (Remove: stop words, emojis, mentions, urls and all kind of noise, along with a stage of lemmatizing and stemming)
