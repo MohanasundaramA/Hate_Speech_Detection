@@ -11,13 +11,14 @@ Hate speech is extremely common on platforms such as Twitter, Facebook, comments
 - Sklearn - 1.2.0
 
 ## Dataset
-Dataset can be downloaded by clicking [here](https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset). The Davidson Dataset contains 24,802 tweets with 5.77% or 1430 rows labeled as hate, 77.43% or 19190 rows as offensive, and 16.80% or 4163 rows as Neither using crowdsourcing for annotating the tweets into the 3 classes. It contains 7 columns namely count, hate_speech, offensive_language, neither, class and tweet
+The dataset can be downloaded by clicking here. The Davidson Dataset contains 24802 tweets, with 5.77% or 1430 rows labelled as "hate," 77.43% or 19190 rows labelled as "offensive," and 16.80% or 4163 rows labelled as "neither" using crowdsourcing to classify the tweets. It contains 7 columns, namely count, hate speech, offensive language, neither, class, and tweet.
 
 ## Flow of the project
-- Pre-processing the tweets (Remove: stop words, emojis, mentions, urls and all kind of noise, along with a stage of lemmatizing and stemming)
-- Use TF-IDF vectorizer to convert the data into a model of numerical features that are ready to be used for classification
-- Apply cross validation on the training vectors with 0.2 splitting factor, while tuning some of the selected parameters to enhance the accuracy
-- Use the best estimator of selected classifier to predict the test labels
+1. Tweet pre-processing (removal of stop words, emojis, mentions, urls, and other noise, as well as a lemmatizing and stemming stage).
+2. Use the  TF-IDF vectorizer to convert the data into a model of numerical features that are ready to be used for classification.
+3. Train five different ML classifiers using the training vectors with a splitting factor of 0.2.
+4. Tune some of the parameters of the best classifier among five to improve the model's accuracy.
+5. Use the best estimator of the selected classifier to predict the test labels.
 
 ## Preprocessing Techniques:
 - Letter casing
