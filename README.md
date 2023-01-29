@@ -1,7 +1,7 @@
 # **Hate Speech Detection**
 
 ## Abstract
-Hate speech is extremely common on platforms such as Twitter, Facebook, comments sections and even blogs or biased online publications, and even though things like profanity filters exist, they only filter out obscenities and swear words.We find that the vast majority of hate speech consists of veiled attacks, or otherwise uses words that would in other contexts be completely innocuous but are being used to attack an individual or group. Most of even this is contextualized, so to know the context of each of the sentences and then gauge the hatefulness to a near perfect accuracy would require some knowledge of the topic under discussion which is beyond the scope of our rule-based algorithm. However, we find we can achieve a healthy precision in not just the detection of hate speech, but also its segregation into weakly or strongly hateful speech.
+Hate speech is extremely common on platforms such as Twitter, Facebook, comment sections, and even blogs or biased online publications, and even though things like profanity filters exist, they only filter out obscenities and swear words. We find that the vast majority of hate speech consists of veiled attacks or otherwise uses words that would in other contexts be completely innocuous but are being used to attack an individual or group. Most of even this is contextualized, so to know the context of each of the sentences and then gauge the hatefulness with near-perfect accuracy would require some knowledge of the topic under discussion, which is beyond the scope of our rule-based algorithm. However, we discover a model to distinguish between speech that is mildly or intensely hostile and identify it with a fair degree of precision.
 
 ## Requirements
 - Python - 3.6.7
@@ -11,7 +11,7 @@ Hate speech is extremely common on platforms such as Twitter, Facebook, comments
 - Sklearn - 1.2.0
 
 ## Dataset
-The dataset can be downloaded by clicking here. The Davidson Dataset contains 24802 tweets, with 5.77% or 1430 rows labelled as "hate," 77.43% or 19190 rows labelled as "offensive," and 16.80% or 4163 rows labelled as "neither" using crowdsourcing to classify the tweets. It contains 7 columns, namely count, hate speech, offensive language, neither, class, and tweet.
+Use the link below to get the dataset. The Davidson Dataset comprises 24802 tweets. Utilizing crowdsourcing to identify the tweets, 5.77% or 1430 rows were labelled as "hate," 77.43% or 19190 rows were labelled as "offensive," and 16.80% or 4163 rows were labelled as "neither." It has 7 columns, including "tweet," "class," "neither," "hate speech" and "bad language".
 
 ## Flow of the project
 1. Tweet pre-processing (removal of stop words, emojis, mentions, urls, and other noise, as well as a lemmatizing and stemming stage).
