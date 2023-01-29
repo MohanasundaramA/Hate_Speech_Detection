@@ -43,5 +43,5 @@ Use the link below to get the dataset. The Davidson Dataset comprises 24802 twee
   
 After tuning the best model (AdaBoost), model accuracy increases to 95.6%.
 
-## Results
+## Result
 Different machine learning models have different strengths that make some better than others for certain tasks, such as detecting hate speech. Some models are more accurate, while others are more efficient. It is important to use different models and compare their performances in order to find the best one for hate speech detection. The model we have trained is a little overfit to the training data, but we can handle this by using different regularisation techniques. But still, we had achieved 95% accuracy on the validation data.
